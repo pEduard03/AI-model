@@ -20,6 +20,7 @@ public class Status {
             statement = connection.createStatement();
             ResultSet rs = statement.executeQuery(statusQuery);
 
+            
             while (rs.next()) {
                 String status = rs.getString("status");
                 System.out.println("\n\n Status: " + status);
